@@ -8,19 +8,19 @@ npm install -g babel
 ## Basic Babel usage
 ``` bash
 # compile and output to stdout
-babel app.js
+babel src/app.js
 
 # compile and output to a file
-babel app.js -o dist/app.js
+babel src/app.js -o dist/app.js
 
 # compile when file change
-babel app.js -w -o dist/app.js
+babel src/app.js -w -o dist/app.js
 
 # evaluate code
 babel-node -e "console.log('Hello, 世界！');"
 
 # compile and run
-babel-node app.js
+babel-node src/app.js
 ```
 
 ## Use Gulp to auto compile
@@ -34,7 +34,7 @@ gulp
 ## Compared source and compiled script
 
 ``` bash
-opendiff app.js dist/app.js
+opendiff src/app.js dist/app.js
 ```
 
 ## Reference
