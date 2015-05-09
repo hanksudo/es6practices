@@ -1,5 +1,5 @@
 // emprt arrow function returns undefined
-'use strict';
+"use strict";
 
 var empty = function empty() {};
 
@@ -13,12 +13,11 @@ var key_maker = function key_maker(val) {
     return { key: val };
 };
 
-// what's JS future?
+// What's JS future?
 var future_javascript = function future_javascript() {
-    var ES6 = 'awesome';
-    console.log('The future of JavaScript is ' + ES6);
+    var ES6 = "awesome";
+    console.log("The future of JavaScript is " + ES6);
 };
-
 future_javascript();
 
 // uppser case
@@ -34,5 +33,19 @@ var even = values.filter(function (x) {
 var even_squares = even.map(function (x) {
     return x * x;
 });
-
 console.log(even, even_squares);
+
+// Lexical this
+var hank = {
+    _name: "Hank",
+    _friends: ["Irving", "Rex", "Amo"],
+    print_friends: function print_friends() {
+        var _this = this;
+
+        this._friends.forEach(function (f) {
+            return console.log(_this._name + " knows " + f);
+        });
+    }
+};
+
+hank.print_friends();
