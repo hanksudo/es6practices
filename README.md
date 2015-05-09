@@ -42,5 +42,6 @@ opendiff src/app.js dist/app.js
 - [Babel · The compiler for writing next generation JavaScript](https://babeljs.io/)
 - [lukehoban/es6features · GitHub](https://github.com/lukehoban/es6features)
 - [Learn ES6 NOW!](http://learnharmony.org/)
+- [function* - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
 - [Arrow functions - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 - [ECMAScript 6入门](http://es6.ruanyifeng.com/)
