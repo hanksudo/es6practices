@@ -1,0 +1,3 @@
+[submodule "learn-generators-workshop"]
+	path = learn-generators-workshop
+	url = git@github.com:hanksudo/learn-generators-workshop.git
