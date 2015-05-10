@@ -13,7 +13,7 @@ function* generator(i) {
     yield i + 10;
 }
 
-var gen = another_generator(1);
+let gen = another_generator(1);
 
 console.log(gen.next().value); // 2
 console.log(gen.next().value); // 3
@@ -28,12 +28,12 @@ console.log(gen.next().value); // 11
 
 
 function* square(i) {
-    var index = 0;
+    let index = 0;
     while(true)
         yield i = i * i;
 }
 
-var square_values = square(2);
+let square_values = square(2);
 console.log(square_values.next().value); // 4
 console.log(square_values.next().value); // 16
 console.log(square_values.next().value); // 256

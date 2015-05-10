@@ -1,5 +1,5 @@
 // array destructuring
-var [first_name, last_name] = ["Hank", "Wang"];
+let [first_name, last_name] = ["Hank", "Wang"];
 console.log(first_name, last_name);
 
 // swap

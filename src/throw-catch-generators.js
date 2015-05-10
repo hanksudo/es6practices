@@ -12,7 +12,7 @@ console.log(dummy().next());
 
 function *foo() { yield "inside foo"; }
 
-var it = foo();
+let it = foo();
 try {
     it.throw('BOOO from outside.');
 } catch(err) {

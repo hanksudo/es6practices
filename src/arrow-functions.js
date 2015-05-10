@@ -15,17 +15,17 @@ let future_javascript = () => {
 future_javascript();
 
 // uppser case
-var new_func = (str) => str.toUpperCase();
+let new_func = (str) => str.toUpperCase();
 
 // even and even squares
-var values = [1, 2, 3, 4 ,5 ,6];
-var even = values.filter(x => x % 2 === 0);
-var even_squares = even.map(x => x * x);
+let values = [1, 2, 3, 4 ,5 ,6];
+let even = values.filter(x => x % 2 === 0);
+let even_squares = even.map(x => x * x);
 console.log(even, even_squares);
 
 
 // Lexical this
-var hank = {
+let hank = {
     _name: "Hank",
     _friends: ["Irving", "Rex", "Amo"],
     print_friends() {

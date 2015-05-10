@@ -1,4 +1,4 @@
-var book = {
+let book = {
     _author: 'Randy Pausch',
     _name: 'Last Lecture',
     get_name() { return this._name; }
