@@ -1,6 +1,9 @@
 "use strict";
 
 var marked0$0 = [another_generator, generator, square].map(regeneratorRuntime.mark);
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*
+
 function another_generator(i) {
     return regeneratorRuntime.wrap(function another_generator$(context$1$0) {
         while (1) switch (context$1$0.prev = context$1$0.next) {
@@ -85,8 +88,8 @@ function square(i) {
 }
 
 var square_values = square(2);
-console.log(square_values.next().value);
-console.log(square_values.next().value);
-console.log(square_values.next().value);
-console.log(square_values.next().value);
-console.log(square_values.next().value);
+console.log(square_values.next().value); // 4
+console.log(square_values.next().value); // 16
+console.log(square_values.next().value); // 256
+console.log(square_values.next().value); // 65536
+console.log(square_values.next().value); // 4294967296
