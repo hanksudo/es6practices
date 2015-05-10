@@ -1,6 +1,6 @@
 // array destructuring
-let [first_name, last_name] = ["Hank", "Wang"];
-console.log(first_name, last_name);
+let [firstName, lastName] = ["Hank", "Wang"];
+console.log(firstName, lastName);
 
 // swap
 let a = 1, b = 2;
@@ -8,7 +8,7 @@ let a = 1, b = 2;
 console.log({a, b});
 
 // skip item
-let [,,third] = [1, 2, 3];
+let [, , third] = [1, 2, 3];
 console.log({third});
 
 // get remaining items

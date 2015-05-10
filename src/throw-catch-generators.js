@@ -2,7 +2,7 @@ function *dummy() {
     try {
         null.foo(); // causes exception
     } catch(e) {
-        console.log('Caught exception: %s', e);
+        console.log("Caught exception: %s", e);
     }
     yield "Got here without crashing.";
 }
@@ -14,7 +14,7 @@ function *foo() { yield "inside foo"; }
 
 let it = foo();
 try {
-    it.throw('BOOO from outside.');
+    it.throw("BOOO from outside.");
 } catch(err) {
-    console.log('Error: %s', err);
+    console.log("Error: %s", err);
 }

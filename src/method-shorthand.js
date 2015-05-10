@@ -1,8 +1,8 @@
 let book = {
-    _author: 'Randy Pausch',
-    _name: 'Last Lecture',
-    get_name() { return this._name; }
+    _author: "Randy Pausch",
+    _name: "Last Lecture",
+    getName() { return this._name; }
 };
 
 console.log("What's this book?");
-console.log("It's", book.get_name());
+console.log("It's", book.getName());

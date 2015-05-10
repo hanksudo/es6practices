@@ -1,7 +1,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*
 
-function* another_generator(i) {
+function* anotherGenerator(i) {
     yield i + 1;
     yield i + 2;
     yield i + 3;
@@ -9,7 +9,7 @@ function* another_generator(i) {
 
 function* generator(i) {
     yield i;
-    yield* another_generator(i);
+    yield* anotherGenerator(i);
     yield i + 10;
 }
 
@@ -29,13 +29,14 @@ console.log(gen.next().value); // 11
 
 function* square(i) {
     let index = 0;
-    while(true)
+    while(true) {
         yield i = i * i;
+    }
 }
 
-let square_values = square(2);
-console.log(square_values.next().value); // 4
-console.log(square_values.next().value); // 16
-console.log(square_values.next().value); // 256
-console.log(square_values.next().value); // 65536
-console.log(square_values.next().value); // 4294967296
+let squareValues = square(2);
+console.log(squareValues.next().value); // 4
+console.log(squareValues.next().value); // 16
+console.log(squareValues.next().value); // 256
+console.log(squareValues.next().value); // 65536
+console.log(squareValues.next().value); // 4294967296

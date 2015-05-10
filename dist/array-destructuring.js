@@ -1,10 +1,10 @@
 // array destructuring
 "use strict";
 
-var first_name = "Hank";
-var last_name = "Wang";
+var firstName = "Hank";
+var lastName = "Wang";
 
-console.log(first_name, last_name);
+console.log(firstName, lastName);
 
 // swap
 var a = 1,

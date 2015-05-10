@@ -9,19 +9,19 @@ var square = function square(x) {
 };
 
 // return object
-var key_maker = function key_maker(val) {
+var keyMaker = function keyMaker(val) {
     return { key: val };
 };
 
 // What's JS future?
-var future_javascript = function future_javascript() {
+var futureJavascript = function futureJavascript() {
     var ES6 = "awesome";
     console.log("The future of JavaScript is " + ES6);
 };
-future_javascript();
+futureJavascript();
 
 // uppser case
-var new_func = function new_func(str) {
+var newFunc = function newFunc(str) {
     return str.toUpperCase();
 };
 
@@ -30,16 +30,16 @@ var values = [1, 2, 3, 4, 5, 6];
 var even = values.filter(function (x) {
     return x % 2 === 0;
 });
-var even_squares = even.map(function (x) {
+var evenSquares = even.map(function (x) {
     return x * x;
 });
-console.log(even, even_squares);
+console.log(even, evenSquares);
 
 // Lexical this
 var hank = {
     _name: "Hank",
     _friends: ["Irving", "Rex", "Amo"],
-    print_friends: function print_friends() {
+    printFriends: function printFriends() {
         var _this = this;
 
         this._friends.forEach(function (f) {
@@ -48,4 +48,4 @@ var hank = {
     }
 };
 
-hank.print_friends();
+hank.printFriends();

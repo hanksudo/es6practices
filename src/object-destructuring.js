@@ -1,7 +1,7 @@
 // object destructuring
 var person = {
-    first: 'Hank',
-    last: 'Wang'
+    first: "Hank",
+    last: "Wang"
 };
 
 let {first, last} = person;
@@ -14,36 +14,36 @@ console.log(fn, ln);
 
 
 // extract two values
-let get_result = () => ({
+let getResult = () => ({
     result: 1234,
     error: null
 });
 
-let {result, error} = get_result();
+let {result, error} = getResult();
 console.log(result, error);
 
 
 // use destructuring to pass variable
-let do_http = ({host, port, path}) => {
+let doHTTP = ({host, port, path}) => {
     console.log(host, port, path);
-}
+};
 
-do_http({
-    host: 'localhost',
+doHTTP({
+    host: "localhost",
     port: 80,
-    path: '/'
+    path: "/"
 });
 
 
 // destructure deeply
 let me = {
-    first_name: 'Hank',
-    last_name: 'Wang',
+    firstName: "Hank",
+    lastName: "Wang",
     school: {
-        senior: 'JFVS',
-        college: 'KUAS'
+        senior: "JFVS",
+        college: "KUAS"
     }
 };
 
-let {first_name: f, last_name, school: { senior: j } } = me;
-console.log(f, last_name, 'went to', j);
+let {firstName: f, lastName, school: { senior: j } } = me;
+console.log(f, lastName, "went to", j);

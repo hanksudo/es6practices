@@ -1,9 +1,9 @@
 // object destructuring
-'use strict';
+"use strict";
 
 var person = {
-    first: 'Hank',
-    last: 'Wang'
+    first: "Hank",
+    last: "Wang"
 };
 
 var first = person.first;
@@ -18,22 +18,22 @@ var ln = person.last;
 console.log(fn, ln);
 
 // extract two values
-var get_result = function get_result() {
+var getResult = function getResult() {
     return {
         result: 1234,
         error: null
     };
 };
 
-var _get_result = get_result();
+var _getResult = getResult();
 
-var result = _get_result.result;
-var error = _get_result.error;
+var result = _getResult.result;
+var error = _getResult.error;
 
 console.log(result, error);
 
 // use destructuring to pass variable
-var do_http = function do_http(_ref) {
+var doHTTP = function doHTTP(_ref) {
     var host = _ref.host;
     var port = _ref.port;
     var path = _ref.path;
@@ -41,24 +41,24 @@ var do_http = function do_http(_ref) {
     console.log(host, port, path);
 };
 
-do_http({
-    host: 'localhost',
+doHTTP({
+    host: "localhost",
     port: 80,
-    path: '/'
+    path: "/"
 });
 
 // destructure deeply
 var me = {
-    first_name: 'Hank',
-    last_name: 'Wang',
+    firstName: "Hank",
+    lastName: "Wang",
     school: {
-        senior: 'JFVS',
-        college: 'KUAS'
+        senior: "JFVS",
+        college: "KUAS"
     }
 };
 
-var f = me.first_name;
-var last_name = me.last_name;
+var f = me.firstName;
+var lastName = me.lastName;
 var j = me.school.senior;
 
-console.log(f, last_name, 'went to', j);
+console.log(f, lastName, "went to", j);

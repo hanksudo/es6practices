@@ -1,4 +1,4 @@
-let mark_active = (first, last) => {
-    return {first, last, is_active: true};
+let markActive = (first, last) => {
+    return {first, last, isActive: true};
 };
-console.log(mark_active('Hank', 'Wang'));
+console.log(markActive("Hank", "Wang"));

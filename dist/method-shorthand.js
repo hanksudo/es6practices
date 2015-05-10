@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
 var book = {
-    _author: 'Randy Pausch',
-    _name: 'Last Lecture',
-    get_name: function get_name() {
+    _author: "Randy Pausch",
+    _name: "Last Lecture",
+    getName: function getName() {
         return this._name;
     }
 };
 
-console.log('What\'s this book?');
-console.log('It\'s', book.get_name());
+console.log("What's this book?");
+console.log("It's", book.getName());

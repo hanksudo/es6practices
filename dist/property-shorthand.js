@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-var mark_active = function mark_active(first, last) {
-    return { first: first, last: last, is_active: true };
+var markActive = function markActive(first, last) {
+    return { first: first, last: last, isActive: true };
 };
-console.log(mark_active('Hank', 'Wang'));
+console.log(markActive("Hank", "Wang"));
