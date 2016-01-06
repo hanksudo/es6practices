@@ -1,12 +1,19 @@
 # ECMAScript 2015 (ES6) Practices
 
+## Requirements
+
+- node (https://nodejs.org)
+- babel (https://babeljs.io)
+
 ## Install Babel
-``` bash
+
+```bash
 npm install -g babel-cli
 ```
 
 ## Basic Babel usage
-``` bash
+
+```bash
 # compile and output to stdout
 babel src/app.js
 
@@ -17,13 +24,29 @@ babel src/app.js -o dist/app.js
 babel src/app.js -w -o dist/app.js
 
 # evaluate code
-babel-node -e "console.log('Hello, 世界！');"
+node -e "console.log('Hello, 世界！');"
 
 # compile and run
-babel-node src/app.js
+node --use_strict src/app.js
 ```
 
-## Use Gulp to auto compile
+## Compile to ES5
+
+```bash
+npm install babel-preset-es2015 --save-dev
+babel src/app.js --presets es2015
+```
+
+or simply add the following line to your `.babelrc` file:
+
+```
+{
+  "presets": ["es2015"]
+}
+```
+
+## Use Gulp to watch & compile
+
 ``` bash
 # install local packages
 npm i
