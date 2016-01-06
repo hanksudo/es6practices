@@ -5,10 +5,11 @@
 - node (https://nodejs.org)
 - babel (https://babeljs.io)
 
-## Install Babel
+## Installation
 
 ```bash
 npm install -g babel-cli
+npm i
 ```
 
 ## Basic Babel usage
@@ -22,6 +23,7 @@ babel src/app.js -o dist/app.js
 
 # compile when file change
 babel src/app.js -w -o dist/app.js
+babel src --watch --out-dir dist
 
 # evaluate code
 node -e "console.log('Hello, 世界！');"
@@ -35,6 +37,7 @@ node --use_strict src/app.js
 ```bash
 npm install babel-preset-es2015 --save-dev
 babel src/app.js --presets es2015
+babel --presets es2015 src --watch --out-dir dist
 ```
 
 or simply add the following line to your `.babelrc` file:
@@ -43,15 +46,6 @@ or simply add the following line to your `.babelrc` file:
 {
   "presets": ["es2015"]
 }
-```
-
-## Use Gulp to watch & compile
-
-``` bash
-# install local packages
-npm i
-# watch & run
-gulp
 ```
 
 ## Compared source and compiled script
