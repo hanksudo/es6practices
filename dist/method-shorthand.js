@@ -1,9 +1,7 @@
-"use strict";
-
-var book = {
+let book = {
     _author: "Randy Pausch",
     _name: "Last Lecture",
-    getName: function getName() {
+    getName() {
         return this._name;
     }
 };
