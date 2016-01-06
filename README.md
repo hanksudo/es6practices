@@ -1,8 +1,8 @@
-# ECMAScript 6 Practices
+# ECMAScript 2015 (ES6) Practices
 
 ## Install Babel
 ``` bash
-npm install -g babel
+npm install -g babel-cli
 ```
 
 ## Basic Babel usage
