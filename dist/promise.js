@@ -1,4 +1,6 @@
-let promise = new Promise((resolve, reject) => {
+"use strict";
+
+var promise = new Promise(function (resolve, reject) {
     if (true) {
         resolve({
             status: "ok"
@@ -10,10 +12,10 @@ let promise = new Promise((resolve, reject) => {
     }
 });
 
-promise.then(value => {
+promise.then(function (value) {
     // success
     console.log(value);
-}, value => {
+}, function (value) {
     // failure
     console.log(value);
 });

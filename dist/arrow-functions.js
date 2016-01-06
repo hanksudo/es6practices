@@ -1,34 +1,50 @@
 // emprt arrow function returns undefined
-let empty = () => {};
+"use strict";
+
+var empty = function empty() {};
 
 // calculate square
-let square = x => x * x;
+var square = function square(x) {
+    return x * x;
+};
 
 // return object
-let keyMaker = val => ({ key: val });
+var keyMaker = function keyMaker(val) {
+    return { key: val };
+};
 
 // What's JS future?
-let futureJavascript = () => {
-    let ES6 = "awesome";
-    console.log(`The future of JavaScript is ${ ES6 }`);
+var futureJavascript = function futureJavascript() {
+    var ES6 = "awesome";
+    console.log("The future of JavaScript is " + ES6);
 };
 futureJavascript();
 
 // uppser case
-let newFunc = str => str.toUpperCase();
+var newFunc = function newFunc(str) {
+    return str.toUpperCase();
+};
 
 // even and even squares
-let values = [1, 2, 3, 4, 5, 6];
-let even = values.filter(x => x % 2 === 0);
-let evenSquares = even.map(x => x * x);
+var values = [1, 2, 3, 4, 5, 6];
+var even = values.filter(function (x) {
+    return x % 2 === 0;
+});
+var evenSquares = even.map(function (x) {
+    return x * x;
+});
 console.log(even, evenSquares);
 
 // Lexical this
-let hank = {
+var hank = {
     _name: "Hank",
     _friends: ["Irving", "Rex", "Amo"],
-    printFriends() {
-        this._friends.forEach(f => console.log(this._name + " knows " + f));
+    printFriends: function printFriends() {
+        var _this = this;
+
+        this._friends.forEach(function (f) {
+            return console.log(_this._name + " knows " + f);
+        });
     }
 };
 

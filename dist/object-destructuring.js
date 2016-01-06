@@ -1,27 +1,43 @@
 // object destructuring
+"use strict";
+
 var person = {
     first: "Hank",
     last: "Wang"
 };
 
-let { first, last } = person;
+var first = person.first;
+var last = person.last;
+
 console.log(first, last);
 
 // assign use different name
-let { first: fn, last: ln } = person;
+var fn = person.first;
+var ln = person.last;
+
 console.log(fn, ln);
 
 // extract two values
-let getResult = () => ({
-    result: 1234,
-    error: null
-});
+var getResult = function getResult() {
+    return {
+        result: 1234,
+        error: null
+    };
+};
 
-let { result, error } = getResult();
+var _getResult = getResult();
+
+var result = _getResult.result;
+var error = _getResult.error;
+
 console.log(result, error);
 
 // use destructuring to pass variable
-let doHTTP = ({ host, port, path }) => {
+var doHTTP = function doHTTP(_ref) {
+    var host = _ref.host;
+    var port = _ref.port;
+    var path = _ref.path;
+
     console.log(host, port, path);
 };
 
@@ -32,7 +48,7 @@ doHTTP({
 });
 
 // destructure deeply
-let me = {
+var me = {
     firstName: "Hank",
     lastName: "Wang",
     school: {
@@ -41,5 +57,8 @@ let me = {
     }
 };
 
-let { firstName: f, lastName, school: { senior: j } } = me;
+var f = me.firstName;
+var lastName = me.lastName;
+var j = me.school.senior;
+
 console.log(f, lastName, "went to", j);

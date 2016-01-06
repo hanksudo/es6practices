@@ -1,18 +1,29 @@
 // array destructuring
-let [firstName, lastName] = ["Hank", "Wang"];
+"use strict";
+
+var firstName = "Hank";
+var lastName = "Wang";
+
 console.log(firstName, lastName);
 
 // swap
-let a = 1,
+var a = 1,
     b = 2;
-[b, a] = [a, b];
-console.log({ a, b });
+var _ref = [a, b];
+b = _ref[0];
+a = _ref[1];
+
+console.log({ a: a, b: b });
 
 // skip item
-let [,, third] = [1, 2, 3];
-console.log({ third });
+var _ref2 = [1, 2, 3];
+var third = _ref2[2];
+
+console.log({ third: third });
 
 // get remaining items
-let [first, ...remaining] = [1, 2, 3, 4, 5];
-console.log({ first });
-console.log({ remaining });
+var first = 1;
+var remaining = [2, 3, 4, 5];
+
+console.log({ first: first });
+console.log({ remaining: remaining });
