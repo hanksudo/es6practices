@@ -15,8 +15,8 @@ var keyMaker = function keyMaker(val) {
 
 // What's JS future?
 var futureJavascript = function futureJavascript() {
-    var ES6 = "awesome";
-    console.log("The future of JavaScript is " + ES6);
+    var ES2015 = "awesome";
+    console.log("The future of JavaScript is " + ES2015);
 };
 futureJavascript();
 

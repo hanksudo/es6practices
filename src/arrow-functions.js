@@ -9,8 +9,8 @@ let keyMaker = val => ({key: val});
 
 // What's JS future?
 let futureJavascript = () => {
-    let ES6 = "awesome";
-    console.log(`The future of JavaScript is ${ES6}`);
+    let ES2015 = "awesome";
+    console.log(`The future of JavaScript is ${ES2015}`);
 };
 futureJavascript();
 
