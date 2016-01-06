@@ -1,6 +1,6 @@
-// emprt arrow function returns undefined
 "use strict";
 
+// emprt arrow function returns undefined
 var empty = function empty() {};
 
 // calculate square

@@ -1,6 +1,6 @@
-// object destructuring
 "use strict";
 
+// object destructuring
 var person = {
     first: "Hank",
     last: "Wang"

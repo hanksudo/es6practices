@@ -1,6 +1,6 @@
-// array destructuring
 "use strict";
 
+// array destructuring
 var firstName = "Hank";
 var lastName = "Wang";
 
